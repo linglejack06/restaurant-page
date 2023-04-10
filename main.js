@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/helperFuncs.js":
+/*!****************************!*\
+  !*** ./src/helperFuncs.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"addParagraph\": () => (/* binding */ addParagraph),\n/* harmony export */   \"createBasicStructure\": () => (/* binding */ createBasicStructure)\n/* harmony export */ });\nfunction createBasicStructure() {\n    const body = document.getElementById('content');\n    const head = document.createElement('div');\n    head.classList.add('head');\n    body.appendChild(head);\n    const main = document.createElement('div');\n    main.classList.add('main');\n    body.appendChild(main);\n    const footer = document.createElement('div');\n    footer.classList.add('footer');\n    body.appendChild(footer);\n\n    return {head, main, footer};\n}\nfunction addParagraph(text, parent, className) {\n    const paragraph = document.createElement('p');\n    paragraph.classList.add(className);\n    paragraph.textContent = text;\n    parent.appendChild(paragraph);\n\n}\n\n//# sourceURL=webpack://restaurant-page/./src/helperFuncs.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderHome)\n/* harmony export */ });\n/* harmony import */ var _groot_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./groot.jpeg */ \"./src/groot.jpeg\");\n\n\nfunction addImage() {\n    const image = new Image();\n    image.src = _groot_jpeg__WEBPACK_IMPORTED_MODULE_0__;\n    image.classList.add('groot');\n    const imageHolder = document.getElementById('image-holder');\n    imageHolder.appendChild(image);\n}\nfunction renderHome() {\n    addImage();\n}\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderHome)\n/* harmony export */ });\n/* harmony import */ var _groot_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./groot.jpeg */ \"./src/groot.jpeg\");\n/* harmony import */ var _helperFuncs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helperFuncs */ \"./src/helperFuncs.js\");\n\n\n\nfunction addImage(parent) {\n    const image = new Image();\n    image.src = _groot_jpeg__WEBPACK_IMPORTED_MODULE_0__;\n    image.classList.add('groot');\n    const imageHolder = document.createElement('div');\n    imageHolder.classList.add('image-holder');\n    imageHolder.appendChild(image)\n    parent.appendChild(imageHolder);\n}\n\nfunction renderHome() {\n    const basicStructure = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_1__.createBasicStructure)();\n    addImage(basicStructure.main);\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_1__.addParagraph)('hi from the future', basicStructure.main, 'future-text')\n}\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
 
 /***/ }),
 
