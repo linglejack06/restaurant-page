@@ -27,9 +27,10 @@ export function addElement(elType, text, parent, className) {
     parent.appendChild(element);
     return element;
 }
-export function addImage(parent, source, className) {
+export function addImage(parent, source, className, altDescription) {
     const image = new Image();
     image.src = source;
+    image.alt = altDescription;
     image.classList.add(className);
     const imageHolder = document.createElement('div');
     imageHolder.classList.add('image-holder');
@@ -37,7 +38,7 @@ export function addImage(parent, source, className) {
     parent.appendChild(imageHolder);
 }
 export function addHead(basicStructure, current) {
-    addImage(basicStructure.header, Groot, 'groot');
+    addImage(basicStructure.header, Groot, 'groot', 'A weeping image of Groot');
     const btnArray = [];
     addElement('h1', `Groot's Bark Bites`, basicStructure.header, 'title');
     const homeBtn = addElement('button', 'Home', basicStructure.navBar, 'nav-btn');
