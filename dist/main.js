@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderMenu)\n/* harmony export */ });\n/* harmony import */ var _helperFuncs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helperFuncs */ \"./src/helperFuncs.js\");\n/* harmony import */ var _bark_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bark.jpg */ \"./src/bark.jpg\");\n\n\n\nfunction addCard(itemName, description, parent, image) {\n    const card = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('div', '', parent, 'menu-card');\n    const head = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('div', '', card, 'img-title-container');\n    const body = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('div', '', card, 'description-container');\n    // add image + title to head of card\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addImage)(head, image, 'food-img');\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('h3', itemName, head, 'item-title');\n    // add description to body of card\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('p', description, body, 'description');\n    \n}\nfunction renderMenu() {\n    const basicStructure = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.createBasicStructure)();\n    // add header content\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addHead)(basicStructure, 'menu');\n    // add cards for menu items\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('h2', 'Our Out of The Galaxy Menu', basicStructure.main, 'title');\n    const menuGrid = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('div', '', basicStructure.main, 'menu-grid');\n    // source: ChatGPT\n    let itemDescription = `Bark noodle soup is a hearty and flavorful dish that combines the earthy taste of tree bark with the satisfying texture of noodles and nuts. With fragrant spices that add a warm and comforting aroma, this soup is a perfect choice for a cozy and unique dining experience.`\n    addCard('Bark Noodle Soup', itemDescription, menuGrid, _bark_jpg__WEBPACK_IMPORTED_MODULE_1__);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderMenu)\n/* harmony export */ });\n/* harmony import */ var _helperFuncs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helperFuncs */ \"./src/helperFuncs.js\");\n/* harmony import */ var _bark_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bark.jpg */ \"./src/bark.jpg\");\n/* harmony import */ var _pizza_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pizza.jpeg */ \"./src/pizza.jpeg\");\n/* harmony import */ var _tenders_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tenders.jpeg */ \"./src/tenders.jpeg\");\n/* harmony import */ var _pasta_jpeg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pasta.jpeg */ \"./src/pasta.jpeg\");\n/* harmony import */ var _drink_jpeg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./drink.jpeg */ \"./src/drink.jpeg\");\n/* harmony import */ var _soda_jpeg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./soda.jpeg */ \"./src/soda.jpeg\");\n\n\n\n\n\n\n\n\nfunction addCard(itemName, description, parent, image) {\n    const card = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('div', '', parent, 'menu-card');\n    const head = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('div', '', card, 'img-title-container');\n    const body = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('div', '', card, 'description-container');\n    // add image + title to head of card\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addImage)(head, image, 'food-img');\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('h3', itemName, head, 'item-title');\n    // add description to body of card\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('p', description, body, 'description');\n    \n}\nfunction renderMenu() {\n    const basicStructure = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.createBasicStructure)();\n    // add header content\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addHead)(basicStructure, 'menu');\n    // add cards for menu items\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('h2', 'Our Out of The Galaxy Menu', basicStructure.main, 'title');\n    const menuGrid = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('div', '', basicStructure.main, 'menu-grid');\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('h2', 'Food', menuGrid, 'long-section-title');\n    // source: ChatGPT\n    let itemDescription = `Features tender bark, savory noodles, crunchy nuts, and fragrant spices in a hearty and comforting broth.`\n    addCard('Bark Noodle Soup', itemDescription, menuGrid, _bark_jpg__WEBPACK_IMPORTED_MODULE_1__);\n    // source: ChatGPT\n    itemDescription = `Features a crispy crust made with bark and topped with a mouthwatering blend of savory tomato sauce, melted cheese, and your choice of delectable toppings.`\n    addCard('Bark Pizza', itemDescription, menuGrid, _pizza_jpeg__WEBPACK_IMPORTED_MODULE_2__);\n    // source: ChatGPT\n    itemDescription = `Made with tender strips of finely ground bark, coated in a flavorful breading, and served with your choice of savory dipping sauce.`;\n    addCard('Bark Tenders', itemDescription, menuGrid, _tenders_jpeg__WEBPACK_IMPORTED_MODULE_3__);\n    // source: ChatGPT\n    itemDescription = `Bark noodles tossed in a savory sauce and sprinkled with herbs and spices.`;\n    addCard('Bark Pasta', itemDescription, menuGrid, _pasta_jpeg__WEBPACK_IMPORTED_MODULE_4__);\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('h2', 'Drinks', menuGrid, 'long-section-title');\n    // source: ChatGPT\n    itemDescription = ` Made from fermented sap, this refreshing beverage boasts a sweet yet tangy taste and a subtle earthy aroma.`;\n    addCard('Twig', itemDescription, menuGrid, _drink_jpeg__WEBPACK_IMPORTED_MODULE_5__);\n    // source: ChatGPT\n    itemDescription = `This vibrant and effervescent beverage combines the flavors of tangy citrus and sweet berries, perfectly balanced with a fizzy and refreshing finish`;\n    addCard('Star-Lord Soda', itemDescription, menuGrid, _soda_jpeg__WEBPACK_IMPORTED_MODULE_6__);\n}\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
 
 /***/ }),
 
@@ -60,6 +60,16 @@ eval("module.exports = __webpack_require__.p + \"4ee3685ceb01e02247de.jpg\";\n\n
 
 /***/ }),
 
+/***/ "./src/drink.jpeg":
+/*!************************!*\
+  !*** ./src/drink.jpeg ***!
+  \************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"30b3ce2a9ccfa89b3b58.jpeg\";\n\n//# sourceURL=webpack://restaurant-page/./src/drink.jpeg?");
+
+/***/ }),
+
 /***/ "./src/groot.jpeg":
 /*!************************!*\
   !*** ./src/groot.jpeg ***!
@@ -67,6 +77,46 @@ eval("module.exports = __webpack_require__.p + \"4ee3685ceb01e02247de.jpg\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"2e7bb9a9943adf0a88a8.jpeg\";\n\n//# sourceURL=webpack://restaurant-page/./src/groot.jpeg?");
+
+/***/ }),
+
+/***/ "./src/pasta.jpeg":
+/*!************************!*\
+  !*** ./src/pasta.jpeg ***!
+  \************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"a710008f42288fc4411d.jpeg\";\n\n//# sourceURL=webpack://restaurant-page/./src/pasta.jpeg?");
+
+/***/ }),
+
+/***/ "./src/pizza.jpeg":
+/*!************************!*\
+  !*** ./src/pizza.jpeg ***!
+  \************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"668a9d640b7b0e407cd2.jpeg\";\n\n//# sourceURL=webpack://restaurant-page/./src/pizza.jpeg?");
+
+/***/ }),
+
+/***/ "./src/soda.jpeg":
+/*!***********************!*\
+  !*** ./src/soda.jpeg ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"00cbfdb06a2bdb5184fb.jpeg\";\n\n//# sourceURL=webpack://restaurant-page/./src/soda.jpeg?");
+
+/***/ }),
+
+/***/ "./src/tenders.jpeg":
+/*!**************************!*\
+  !*** ./src/tenders.jpeg ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9ce84c8bd79ff0bdb9df.jpeg\";\n\n//# sourceURL=webpack://restaurant-page/./src/tenders.jpeg?");
 
 /***/ })
 
