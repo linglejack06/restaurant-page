@@ -58,3 +58,17 @@ export function addHead(basicStructure, current) {
         }
     })
 }
+export function addLabel (forAttribute, text, parent) {
+    const nameLabel = document.createElement('label');
+    nameLabel.htmlFor = forAttribute;
+    nameLabel.textContent = text;
+    parent.appendChild(nameLabel);
+}
+export function addInput (type, className, idName, placeholder, parent) {
+    const nameInput = document.createElement('input');
+    nameInput.type = type;
+    nameInput.classList.add(className);
+    nameInput.setAttribute('id', idName);
+    nameInput.placeholder = placeholder;
+    parent.appendChild(nameInput);
+}

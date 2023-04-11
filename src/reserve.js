@@ -1,4 +1,4 @@
-import { createBasicStructure, addElement, addHead } from "./helperFuncs";
+import { createBasicStructure, addLabel, addInput, addElement, addHead } from "./helperFuncs";
 
 export default function renderReserve () {
     const basicStructure = createBasicStructure();
@@ -11,14 +11,6 @@ export default function renderReserve () {
     const formContainer = addElement('div', '', basicStructure.main, 'form-containr');
     const form = addElement('form', '', formContainer, 'reserve-form');
     // name input + label
-    const nameLabel = document.createElement('label');
-    nameLabel.htmlFor = 'name';
-    nameLabel.textContent = 'Full Name:';
-    form.appendChild(nameLabel);
-    const nameInput = document.createElement('input');
-    nameInput.type = 'text';
-    nameInput.classList.add('name');
-    nameInput.setAttribute('id', 'name');
-    nameInput.placeholder = 'Groot';
-    form.appendChild(nameInput);
+    addLabel('name', 'Full Name:', form);
+    addInput('text', 'name', 'name', 'Groot', form);
 }
