@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderAbout)\n/* harmony export */ });\n/* harmony import */ var _helperFuncs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helperFuncs */ \"./src/helperFuncs.js\");\n/* harmony import */ var _smilingGroot_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./smilingGroot.jpeg */ \"./src/smilingGroot.jpeg\");\n\n\n\nfunction renderAbout () {\n    // message source: chatGPT\n    const welcomeMsg = `Welcome to Groot's Bark Bites, a unique dining experience owned and operated by the sentient tree himself, Groot. Our restaurant offers a one-of-a-kind menu featuring dishes made from the finest and most flavorful bark in the galaxy. Groot has curated each dish with care, ensuring that every bite is a savory and satisfying adventure.`\n    const beliefMsg = `At Groot's Bark Bites, we believe that food is an expression of love and creativity, and we strive to share our passion for bark-based cuisine with each and every customer. Our restaurant is a welcoming space for all, whether you're a Guardian of the Galaxy or a local foodie looking for something new and exciting. Come join us for a meal that is out of this world!`\n    const basicStructure = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.createBasicStructure)();\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addHead)(basicStructure, 'about');\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addImage)(basicStructure.main, _smilingGroot_jpeg__WEBPACK_IMPORTED_MODULE_1__, 'hero-img');\n    const welcomeSection = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('div', '', basicStructure.main, 'welcome-container');\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('h2', 'Welcome To Our Restaurant', welcomeSection, 'section-title');\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('p', welcomeMsg, welcomeSection, 'welcome-msg');\n    const beliefSection = (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('div', '', basicStructure.body, 'belief-container');\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('h2', 'Our Belief', beliefSection, 'section-title');\n    (0,_helperFuncs__WEBPACK_IMPORTED_MODULE_0__.addElement)('p', beliefMsg, beliefSection, 'belief-msg');\n}\n\n//# sourceURL=webpack://restaurant-page/./src/about.js?");
+
+/***/ }),
+
 /***/ "./src/helperFuncs.js":
 /*!****************************!*\
   !*** ./src/helperFuncs.js ***!
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\n\n\nconst content = document.getElementById('content');\ncontent.innerHTML = '';\n(0,_menu__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n\n\n\n\nconst content = document.getElementById('content');\ncontent.innerHTML = '';\n(0,_about__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -97,6 +107,16 @@ eval("module.exports = __webpack_require__.p + \"a710008f42288fc4411d.jpeg\";\n\
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"668a9d640b7b0e407cd2.jpeg\";\n\n//# sourceURL=webpack://restaurant-page/./src/pizza.jpeg?");
+
+/***/ }),
+
+/***/ "./src/smilingGroot.jpeg":
+/*!*******************************!*\
+  !*** ./src/smilingGroot.jpeg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9ec83208f7f7ce191879.jpeg\";\n\n//# sourceURL=webpack://restaurant-page/./src/smilingGroot.jpeg?");
 
 /***/ }),
 
