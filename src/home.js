@@ -1,18 +1,9 @@
-import Groot from './groot.jpeg';
-import { createBasicStructure, addParagraph } from './helperFuncs';
-
-function addImage(parent) {
-    const image = new Image();
-    image.src = Groot;
-    image.classList.add('groot');
-    const imageHolder = document.createElement('div');
-    imageHolder.classList.add('image-holder');
-    imageHolder.appendChild(image)
-    parent.appendChild(imageHolder);
-}
+import { createBasicStructure, addElement, addHead } from './helperFuncs';
 
 export default function renderHome() {
     const basicStructure = createBasicStructure();
-    addImage(basicStructure.main);
-    addParagraph('hi from the future', basicStructure.main, 'future-text')
+    // create head title + img
+    addHead(basicStructure, 'home');
+    // create main body section
+
 }
