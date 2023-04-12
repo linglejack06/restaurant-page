@@ -2,7 +2,7 @@ import { createBasicStructure, addLabel, addInput, addElement, addHead } from ".
 
 export default function renderReserve () {
     const basicStructure = createBasicStructure();
-    addHead(basicStructure, 'reserve');
+    const navBtns = addHead(basicStructure, 'reserve');
     const reservationContainer = addElement('div', '', basicStructure.main, 'section-container');
     addElement('h2', 'Reservations', reservationContainer, 'section-title');
     const paraText = `Due to current demand, all travellers are required to reserve a table and food request atleast one week in advance. While reviewing your reservation, we are authorized to perform background checks, and, if needed, notify the Sovereign.`;
@@ -25,4 +25,5 @@ export default function renderReserve () {
         e.preventDefault();
         console.log('Submitted');
     })
+    return navBtns;
 }

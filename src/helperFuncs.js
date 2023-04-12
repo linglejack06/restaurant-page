@@ -56,7 +56,8 @@ export function addHead(basicStructure, current) {
         } else {
             btn.classList.add('inactive');
         }
-    })
+    });
+    return btnArray;
 }
 export function addLabel (forAttribute, text, parent) {
     const nameLabel = document.createElement('label');
@@ -71,4 +72,14 @@ export function addInput (type, className, idName, placeholder, parent) {
     nameInput.setAttribute('id', idName);
     nameInput.placeholder = placeholder;
     parent.appendChild(nameInput);
+}
+export function addCard(itemName, description, parent, image, imageAlt) {
+    const card = addElement('div', '', parent, 'menu-card');
+    const head = addElement('div', '', card, 'img-title-container');
+    const body = addElement('div', '', card, 'description-container');
+    // add image + title to head of card
+    addImage(head, image, 'food-img', imageAlt);
+    addElement('h3', itemName, head, 'item-title');
+    // add description to body of card
+    addElement('p', description, body, 'description');
 }

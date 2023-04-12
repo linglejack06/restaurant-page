@@ -1,4 +1,4 @@
-import { createBasicStructure, addElement, addHead, addImage } from './helperFuncs';
+import { createBasicStructure, addElement, addHead, addCard } from './helperFuncs';
 import Bark from './bark.jpg';
 import Pizza from './pizza.jpeg';
 import Tenders from './tenders.jpeg';
@@ -6,21 +6,10 @@ import Pasta from './pasta.jpeg'
 import Drink from './drink.jpeg';
 import Soda from './soda.jpeg';
 
-function addCard(itemName, description, parent, image, imageAlt) {
-    const card = addElement('div', '', parent, 'menu-card');
-    const head = addElement('div', '', card, 'img-title-container');
-    const body = addElement('div', '', card, 'description-container');
-    // add image + title to head of card
-    addImage(head, image, 'food-img', imageAlt);
-    addElement('h3', itemName, head, 'item-title');
-    // add description to body of card
-    addElement('p', description, body, 'description');
-    
-}
 export default function renderMenu() {
     const basicStructure = createBasicStructure();
     // add header content
-    addHead(basicStructure, 'menu');
+    const navBtns = addHead(basicStructure, 'menu');
     // add cards for menu items
     addElement('h2', 'Our Out of The Galaxy Menu', basicStructure.main, 'title');
     const menuGrid = addElement('div', '', basicStructure.main, 'menu-grid');
@@ -44,4 +33,5 @@ export default function renderMenu() {
     // source: ChatGPT
     itemDescription = `This vibrant and effervescent beverage combines the flavors of tangy citrus and sweet berries, perfectly balanced with a fizzy and refreshing finish`;
     addCard('Star-Lord Soda', itemDescription, menuGrid, Soda, 'Orange soda');
+    return navBtns;
 }
