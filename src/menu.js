@@ -9,7 +9,7 @@ import Soda from './soda.jpeg';
 export default function renderMenu() {
     const basicStructure = createBasicStructure();
     // add header content
-    const navBtns = addHead(basicStructure, 'menu');
+    addHead(basicStructure, 'menu');
     // add cards for menu items
     addElement('h2', 'Our Out of The Galaxy Menu', basicStructure.main, 'title');
     const menuGrid = addElement('div', '', basicStructure.main, 'menu-grid');
@@ -33,5 +33,4 @@ export default function renderMenu() {
     // source: ChatGPT
     itemDescription = `This vibrant and effervescent beverage combines the flavors of tangy citrus and sweet berries, perfectly balanced with a fizzy and refreshing finish`;
     addCard('Star-Lord Soda', itemDescription, menuGrid, Soda, 'Orange soda');
-    return navBtns;
 }

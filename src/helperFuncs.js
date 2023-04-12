@@ -57,7 +57,6 @@ export function addHead(basicStructure, current) {
             btn.classList.add('inactive');
         }
     });
-    return btnArray;
 }
 export function addLabel (forAttribute, text, parent) {
     const nameLabel = document.createElement('label');
