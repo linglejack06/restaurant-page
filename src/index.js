@@ -2,6 +2,7 @@ import renderHome from './home';
 import renderMenu from './menu';
 import renderAbout from './about';
 import renderReserve from './reserve';
+import './style.css';
 
 const content = document.getElementById('content');
 content.innerHTML = '';

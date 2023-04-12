@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    font-size: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+#content {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    height: 100%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 8px;
+}
+.img-container {
+    height: 10vh;
+}
+.groot {
+    width: 100%;
+    height: 100%;
+}
+.head {
+    display: grid;
+    background-color: #13286b;
+    color: white;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 8px;
+}
+.nav-btn {
+    flex: 1 1 auto;
+    margin: 0px 16px;
+    background-color: #f8b54c;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px 0px;
+    font-weight: bold;
+}
+.active {
+    background-color: #ff6200;
+}
+.main {
+    background-color: #fdfac3;
+    padding: 8px;
+}
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10%;
+}
+.section-container>p {
+    font-size: 1.5rem;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr 2fr;
+}
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8b54c;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 8px;
+}
+.img-title-container {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+}
+.long-section-title {
+    grid-column: 1 / span 2;
+    text-align: center;
+    align-self: end;
+}
+.image-holder {
+    width: 50%;
+}
+.food-img {
+    width: 100%;
+}
+.description {
+    font-size: 1.5rem;
+}
+.title {
+    text-align: center;
+    padding-top: 16px;
+}

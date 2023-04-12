@@ -36,9 +36,12 @@ export function addImage(parent, source, className, altDescription) {
     imageHolder.classList.add('image-holder');
     imageHolder.appendChild(image)
     parent.appendChild(imageHolder);
+    return imageHolder;
 }
 export function addHead(basicStructure, current) {
-    addImage(basicStructure.header, Groot, 'groot', 'A weeping image of Groot');
+    const imageHolder = addImage(basicStructure.header, Groot, 'groot', 'A weeping image of Groot');
+    imageHolder.classList.remove('image-holder');
+    imageHolder.classList.add('img-container');
     const btnArray = [];
     addElement('h1', `Groot's Bark Bites`, basicStructure.header, 'title');
     const homeBtn = addElement('button', 'Home', basicStructure.navBar, 'nav-btn');
