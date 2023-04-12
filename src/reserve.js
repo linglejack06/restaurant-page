@@ -13,4 +13,16 @@ export default function renderReserve () {
     // name input + label
     addLabel('name', 'Full Name:', form);
     addInput('text', 'name', 'name', 'Groot', form);
+    // email input + label
+    addLabel('email', 'Email Address:', form);
+    addInput('email', 'email', 'email', 'groot@guardians.com', form);
+    // phone number input + label
+    addLabel('num', 'Phone Number:', form);
+    addInput('tel', 'phone-num', 'num', '123-456-7890', form)
+    // submit button
+    const button = addElement('button', 'Reserve', form, 'submit-btn');
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log('Submitted');
+    })
 }
